@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+  height: 55px;
+}
+
+.header-menu {
+  align-self: center;
+}
+
+.header-title {
+  /* flex:1 1 auto; */
+  flex-grow: 1;
+  text-align: center;
+  font-size: 4.4rem;
+  margin: 0;
+}
+
+.header-title a {
+  color: rgb(192, 157, 157);
+  text-decoration: none;
+}

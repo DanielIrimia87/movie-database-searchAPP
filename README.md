@@ -1,2 +1,2 @@
-# movie-database-search
+# Movie-database
 Created with CodeSandbox
