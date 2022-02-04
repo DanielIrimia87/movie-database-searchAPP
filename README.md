@@ -1,2 +1,3 @@
-# Movie-database
+# MovieDB-shearchAPP
+
 Created with CodeSandbox
