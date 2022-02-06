@@ -2,18 +2,22 @@ import React, { useState } from "react";
 import MovieCard from "./movieCard.js";
 
 export default function SearchMovies() {
-  //states- input query, movies
+  //states- input query
+  // array destruction
   const [query, setQuery] = useState("");
-  //create the state for movies, and update that state appropriate
+  //state for movies,
   const [movies, setMovies] = useState([]);
+  //  async function that prevent form to refreshing page on submit
+  const searchMovies = async (event) => {
+    event.preventDefault();
 
-  const searchMovies = async (e) => {
-    e.preventDefault();
-
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=1617222e97e8e98e64639029d2bf411f&language=en-US&query=${query}&page=1&include_adult=false`;
+    const api_key = "1617222e97e8e98e64639029d2bf411f";
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&language=en-US&query=${query}&page=1&include_adult=false`;
 
     try {
+      //await that promise and assigning to a variable
       const res = await fetch(url);
+      // convert our respond to body of data variable and await actual data coming back
       const data = await res.json();
       setMovies(data.results);
     } catch (err) {
