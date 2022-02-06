@@ -12,7 +12,7 @@ export default function Footer() {
           <br />
           Developed just for fun ;)
         </p>
-        <small className="gray">Copyright © 2022</small>
+        <small>Copyright © 2022</small>
       </footer>
     </div>
   );

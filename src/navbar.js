@@ -32,13 +32,13 @@ export default function DenseAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h1" color="inherit">
-            <div className="header">
+            <header className="header">
               <h1 className="header-title">
                 <a href="/" title="movieList">
                   movie<span>🎥</span>List
                 </a>
               </h1>
-            </div>
+            </header>
           </Typography>
         </Toolbar>
       </AppBar>
